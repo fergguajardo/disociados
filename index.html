@@ -246,7 +246,12 @@ footer {
   border-radius: 8px; padding: 12px 16px; cursor: pointer; text-decoration: none;
   display: block;
 }
-.age-yes{ background: var(--accent); color: #15130f; border: 1px solid var(--accent); }
+.age-actions .age-yes{
+  background: transparent; color: var(--accent);
+  border: 1px solid var(--accent); border-radius: 999px;
+  width: fit-content; max-width: 100%; align-self: center;
+  padding: 12px 24px; line-height: 1.4; overflow-wrap: anywhere;
+}
 .age-no{ background: transparent; color: var(--text-dim); border: 1px solid var(--card-border); }
 body.age-locked{ overflow: hidden; }
 </style>
